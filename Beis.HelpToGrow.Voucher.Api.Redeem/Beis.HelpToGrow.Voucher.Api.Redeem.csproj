@@ -27,7 +27,7 @@
   </ItemGroup>
   <ItemGroup>
     <Reference Include="BeisEntityAssembly">
-      <HintPath>library/Beis.Htg.VendorSme.Database.dll</HintPath>
+      <HintPath>Library/Beis.Htg.VendorSme.Database.dll</HintPath>
     </Reference>
   </ItemGroup>
 

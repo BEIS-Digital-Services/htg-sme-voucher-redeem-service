@@ -15,12 +15,12 @@
     </ItemGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\VoucherRedeemMicroService\Beis.HelpToGrow.Voucher.Api.Redeem.csproj" />
+      <ProjectReference Include="..\Beis.HelpToGrow.Voucher.Api.Redeem\Beis.HelpToGrow.Voucher.Api.Redeem.csproj" />
     </ItemGroup>
 
     <ItemGroup>
       <Reference Include="Beis.Htg.VendorSme.Database">
-        <HintPath>..\VoucherRedeemMicroService\library\Beis.Htg.VendorSme.Database.dll</HintPath>
+        <HintPath>..\Beis.HelpToGrow.Voucher.Api.Redeem\Library\Beis.Htg.VendorSme.Database.dll</HintPath>
       </Reference>
     </ItemGroup>
 
