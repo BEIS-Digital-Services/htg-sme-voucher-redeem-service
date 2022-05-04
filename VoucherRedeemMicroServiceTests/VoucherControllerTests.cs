@@ -4,13 +4,13 @@ using Moq;
 using Newtonsoft.Json.Serialization;
 using NuGet.Frameworks;
 using NUnit.Framework;
-using smevoucherencryption;
+using Beis.HelpToGrow.Voucher.Api.Redeem.Common;
 using System.Threading.Tasks;
-using VoucherRedeemService.interfaces;
-using VoucherUpdateService.Controllers;
-using VoucherUpdateService.domain.entities;
+using Beis.HelpToGrow.Voucher.Api.Redeem.Interfaces;
+using Beis.HelpToGrow.Voucher.Api.Redeem.Controllers;
+using Beis.HelpToGrow.Voucher.Api.Redeem.Domain.Entities;
 
-namespace VoucherRedeemMicroServiceTests
+namespace Beis.HelpToGrow.Voucher.Api.Redeem.Tests
 {
     [TestFixture]
     public class VoucherControllerTests

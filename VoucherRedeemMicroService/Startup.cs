@@ -10,14 +10,13 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Microsoft.OpenApi.Models;
-using smevoucherencryption;
-using VoucherCheckService.services.interfaces;
-using VoucherCheckService.services.repositories;
-using VoucherRedeemMicroService.common;
-using VoucherRedeemMicroService.services;
-using VoucherRedeemService.interfaces;
+using Beis.HelpToGrow.Voucher.Api.Redeem.Common;
+using Beis.HelpToGrow.Voucher.Api.Redeem.Services.Interfaces;
+using Beis.HelpToGrow.Voucher.Api.Redeem.Services.Repositories;
+using Beis.HelpToGrow.Voucher.Api.Redeem.Services;
+using Beis.HelpToGrow.Voucher.Api.Redeem.Interfaces;
 
-namespace VoucherUpdateService
+namespace Beis.HelpToGrow.Voucher.Api.Redeem
 {
     public class Startup
     {
@@ -49,7 +48,7 @@ namespace VoucherUpdateService
 
             services.AddDbContext<HtgVendorSmeDbContext>(options => options.UseNpgsql(Configuration["HELPTOGROW_CONNECTIONSTRING"]), ServiceLifetime.Transient);
 
-            services.AddTransient<IVoucherRedeemService, VoucherRedeemMicroService.services.VoucherRedeemService>();
+            services.AddTransient<IVoucherRedeemService, Beis.HelpToGrow.Voucher.Api.Redeem.Services.VoucherRedeemService>();
             services.AddTransient<IVendorAPICallStatusServices, VendorAPICallStatusServices>();
             services.AddTransient<IVendorAPICallStatusRepository, VendorApiCallStatusRepository>();
 

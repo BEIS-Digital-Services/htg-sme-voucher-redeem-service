@@ -3,13 +3,13 @@ using Beis.Htg.VendorSme.Database.Models;
 using Moq;
 using System.Text.Json;
 using NUnit.Framework;
-using VoucherCheckService.services.interfaces;
-using VoucherRedeemMicroService.services;
-using VoucherRedeemService.interfaces;
-using VoucherUpdateService.domain.entities;
+using Beis.HelpToGrow.Voucher.Api.Redeem.Services.Interfaces;
+using Beis.HelpToGrow.Voucher.Api.Redeem.Services;
+using Beis.HelpToGrow.Voucher.Api.Redeem.Interfaces;
+using Beis.HelpToGrow.Voucher.Api.Redeem.Domain.Entities;
 using System.Threading.Tasks;
 
-namespace VoucherRedeemMicroServiceTests
+namespace Beis.HelpToGrow.Voucher.Api.Redeem.Tests
 {
     public class VendorAPICallStatusServicesTests
     {

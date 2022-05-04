@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace VoucherRedeemMicroService.common
+namespace Beis.HelpToGrow.Voucher.Api.Redeem.Common
 {
     public class EncryptionSettings
     {

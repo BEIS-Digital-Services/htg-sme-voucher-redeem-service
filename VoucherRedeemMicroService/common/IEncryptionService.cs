@@ -1,4 +1,4 @@
-namespace smevoucherencryption
+namespace Beis.HelpToGrow.Voucher.Api.Redeem.Common
 {
     public interface IEncryptionService
     {

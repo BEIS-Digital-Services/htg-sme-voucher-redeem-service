@@ -1,14 +1,14 @@
 FROM mcr.microsoft.com/dotnet/sdk:5.0 AS build
 WORKDIR /src
-COPY ["VoucherRedeemMicroService/VoucherRedeemMicroService.csproj","VoucherRedeemMicroService/"]
-RUN dotnet restore "VoucherRedeemMicroService/VoucherRedeemMicroService.csproj"
+COPY ["Beis.HelpToGrow.Voucher.Api.Redeem/Beis.HelpToGrow.Voucher.Api.Redeem.csproj","Beis.HelpToGrow.Voucher.Api.Redeem/"]
+RUN dotnet restore "Beis.HelpToGrow.Voucher.Api.Redeem/Beis.HelpToGrow.Voucher.Api.Redeem.csproj"
 COPY . .
-WORKDIR "/src/VoucherRedeemMicroService"
-RUN dotnet publish "VoucherRedeemMicroService.csproj" -c release -o /app
+WORKDIR "/src/Beis.HelpToGrow.Voucher.Api.Redeem"
+RUN dotnet publish "Beis.HelpToGrow.Voucher.Api.Redeem.csproj" -c release -o /app
 
 FROM mcr.microsoft.com/dotnet/aspnet:5.0
 WORKDIR /app
 COPY --from=build /app .
 EXPOSE 80
 EXPOSE 443
-ENTRYPOINT ["dotnet", "VoucherRedeemMicroService.dll"]
+ENTRYPOINT ["dotnet", "Beis.HelpToGrow.Voucher.Api.Redeem.dll"]

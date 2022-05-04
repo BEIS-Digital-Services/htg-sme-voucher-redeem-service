@@ -1,7 +1,7 @@
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Hosting;
 
-namespace VoucherUpdateService
+namespace Beis.HelpToGrow.Voucher.Api.Redeem
 {
     public class Program
     {

@@ -15,7 +15,7 @@
     </ItemGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\VoucherRedeemMicroService\VoucherRedeemMicroService.csproj" />
+      <ProjectReference Include="..\VoucherRedeemMicroService\Beis.HelpToGrow.Voucher.Api.Redeem.csproj" />
     </ItemGroup>
 
     <ItemGroup>

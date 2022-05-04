@@ -3,9 +3,8 @@ using System;
 using System.IO;
 using System.Security.Cryptography;
 using System.Text;
-using VoucherRedeemMicroService.common;
 
-namespace smevoucherencryption
+namespace Beis.HelpToGrow.Voucher.Api.Redeem.Common
 {
     public class AesEncryption: IEncryptionService
     {

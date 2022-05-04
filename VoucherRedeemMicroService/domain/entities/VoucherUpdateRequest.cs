@@ -1,6 +1,6 @@
 using System.ComponentModel.DataAnnotations;
 
-namespace VoucherUpdateService.domain.entities
+namespace Beis.HelpToGrow.Voucher.Api.Redeem.Domain.Entities
 {
     public class VoucherUpdateRequest
     {

@@ -2,9 +2,9 @@ using System.Linq;
 using System.Threading.Tasks;
 using Beis.Htg.VendorSme.Database;
 using Beis.Htg.VendorSme.Database.Models;
-using VoucherCheckService.services.interfaces;
+using Beis.HelpToGrow.Voucher.Api.Redeem.Services.Interfaces;
 
-namespace VoucherCheckService.services.repositories
+namespace Beis.HelpToGrow.Voucher.Api.Redeem.Services.Repositories
 {
     public class TokenRepository: ITokenRepository
     {

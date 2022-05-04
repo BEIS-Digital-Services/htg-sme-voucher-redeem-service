@@ -1,7 +1,7 @@
 using System.Threading.Tasks;
-using VoucherUpdateService.domain.entities;
+using Beis.HelpToGrow.Voucher.Api.Redeem.Domain.Entities;
 
-namespace VoucherRedeemService.interfaces
+namespace Beis.HelpToGrow.Voucher.Api.Redeem.Interfaces
 {
     public interface IVoucherRedeemService
     {

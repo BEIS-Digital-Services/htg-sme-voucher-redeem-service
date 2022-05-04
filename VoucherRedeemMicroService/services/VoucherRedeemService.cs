@@ -3,12 +3,12 @@ using System.Text.Json;
 using System.Threading.Tasks;
 using Beis.Htg.VendorSme.Database.Models;
 using Microsoft.Extensions.Logging;
-using smevoucherencryption;
-using VoucherCheckService.services.interfaces;
-using VoucherRedeemService.interfaces;
-using VoucherUpdateService.domain.entities;
+using Beis.HelpToGrow.Voucher.Api.Redeem.Common;
+using Beis.HelpToGrow.Voucher.Api.Redeem.Services.Interfaces;
+using Beis.HelpToGrow.Voucher.Api.Redeem.Interfaces;
+using Beis.HelpToGrow.Voucher.Api.Redeem.Domain.Entities;
 
-namespace VoucherRedeemMicroService.services
+namespace Beis.HelpToGrow.Voucher.Api.Redeem.Services
 {
     public class VoucherRedeemService : IVoucherRedeemService
     {

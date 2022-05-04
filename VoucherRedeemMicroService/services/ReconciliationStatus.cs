@@ -1,4 +1,4 @@
-namespace VoucherRedeemMicroService.services
+namespace Beis.HelpToGrow.Voucher.Api.Redeem.Services
 {
     public enum ReconciliationStatus
     {

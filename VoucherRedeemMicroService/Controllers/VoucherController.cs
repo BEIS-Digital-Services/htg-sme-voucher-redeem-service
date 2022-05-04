@@ -3,11 +3,11 @@ using System.Threading.Tasks;
 using Beis.Htg.VendorSme.Database.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
-using VoucherRedeemService.interfaces;
-using VoucherUpdateService.domain.entities;
+using Beis.HelpToGrow.Voucher.Api.Redeem.Interfaces;
+using Beis.HelpToGrow.Voucher.Api.Redeem.Domain.Entities;
 using JsonSerializer = System.Text.Json.JsonSerializer;
 
-namespace VoucherUpdateService.Controllers
+namespace Beis.HelpToGrow.Voucher.Api.Redeem.Controllers
 {
     [ApiController]
     [Route("api/voucherupdate")]

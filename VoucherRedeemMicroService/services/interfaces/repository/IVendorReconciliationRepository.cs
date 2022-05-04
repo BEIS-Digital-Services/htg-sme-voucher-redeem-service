@@ -1,6 +1,6 @@
 using Beis.Htg.VendorSme.Database.Models;
 
-namespace VoucherCheckService.services.interfaces
+namespace Beis.HelpToGrow.Voucher.Api.Redeem.Services.Interfaces
 {
     public interface IVendorReconciliationRepository
     {

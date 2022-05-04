@@ -1,12 +1,12 @@
 using System;
 using Beis.Htg.VendorSme.Database.Models;
-using VoucherCheckService.services.interfaces;
-using VoucherRedeemService.interfaces;
+using Beis.HelpToGrow.Voucher.Api.Redeem.Services.Interfaces;
+using Beis.HelpToGrow.Voucher.Api.Redeem.Interfaces;
 using System.Text.Json;
-using VoucherUpdateService.domain.entities;
+using Beis.HelpToGrow.Voucher.Api.Redeem.Domain.Entities;
 using System.Threading.Tasks;
 
-namespace VoucherRedeemMicroService.services
+namespace Beis.HelpToGrow.Voucher.Api.Redeem.Services
 {
     public class VendorAPICallStatusServices: IVendorAPICallStatusServices
     {

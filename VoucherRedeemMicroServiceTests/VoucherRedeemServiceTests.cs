@@ -6,22 +6,22 @@ using Beis.Htg.VendorSme.Database.Models;
 using Microsoft.Extensions.Logging;
 using Moq;
 using NUnit.Framework;
-using smevoucherencryption;
-using VoucherCheckService.services.interfaces;
-using VoucherRedeemService.interfaces;
-using VoucherUpdateService.domain.entities;
-using VoucherRedeemService = VoucherRedeemMicroService.services.VoucherRedeemService;
+using Beis.HelpToGrow.Voucher.Api.Redeem.Common;
+using Beis.HelpToGrow.Voucher.Api.Redeem.Services.Interfaces;
+using Beis.HelpToGrow.Voucher.Api.Redeem.Interfaces;
+using Beis.HelpToGrow.Voucher.Api.Redeem.Domain.Entities;
+using VoucherRedeemService = Beis.HelpToGrow.Voucher.Api.Redeem.Services.VoucherRedeemService;
 
-namespace VoucherRedeemMicroServiceTests
+namespace Beis.HelpToGrow.Voucher.Api.Redeem.Tests
 {
     public class VoucherRedeemServiceTests
     {
-        private VoucherRedeemMicroService.services.VoucherRedeemService _voucherRedeemService;
+        private Beis.HelpToGrow.Voucher.Api.Redeem.Services.VoucherRedeemService _voucherRedeemService;
         private Mock<IEncryptionService> _encryptionService;
         private Mock<ITokenRepository> _tokenRepository;
         private Mock<IProductRepository> _productRepository;
         private Mock<IVendorCompanyRepository> _vendorCompanyRepository;
-        private Mock<ILogger<VoucherRedeemMicroService.services.VoucherRedeemService>> _logger;
+        private Mock<ILogger<Beis.HelpToGrow.Voucher.Api.Redeem.Services.VoucherRedeemService>> _logger;
         private Mock<IVendorAPICallStatusServices> _vendorAPICallStatusServices;
 
         [SetUp]
@@ -31,12 +31,12 @@ namespace VoucherRedeemMicroServiceTests
             _tokenRepository = new Mock<ITokenRepository>();
             _productRepository = new Mock<IProductRepository>();
             _vendorCompanyRepository = new Mock<IVendorCompanyRepository>();
-            _logger = new Mock<ILogger<VoucherRedeemMicroService.services.VoucherRedeemService>>();
+            _logger = new Mock<ILogger<Beis.HelpToGrow.Voucher.Api.Redeem.Services.VoucherRedeemService>>();
             _vendorAPICallStatusServices = new Mock<IVendorAPICallStatusServices>();
             _vendorAPICallStatusServices.Setup(x => x.CreateLogRequestDetails(It.IsAny<VoucherUpdateRequest>()))
                 .Returns(new Beis.Htg.VendorSme.Database.Models.vendor_api_call_status { });
 
-            _voucherRedeemService = new VoucherRedeemMicroService.services.VoucherRedeemService(_logger.Object,
+            _voucherRedeemService = new Beis.HelpToGrow.Voucher.Api.Redeem.Services.VoucherRedeemService(_logger.Object,
                                                                                                 _encryptionService.Object,
                                                                                                 _tokenRepository.Object,
                                                                                                 _vendorCompanyRepository.Object,
